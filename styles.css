@@ -1,0 +1,121 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+/* Estilos para a barra verde */
+.banner {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.banner h2 {
+    font-size: 24px;
+}
+
+/* Estilos para o componente de Login e Cadastrar */
+.login-cadastrar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    padding: 30px 0;
+}
+
+.section {
+    text-align: center;
+}
+
+.section img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.section button:hover {
+    background-color: darkblue;
+}
+
+/* Estilos para o formulário de login */
+.login-form {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.login-form form {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: darkgreen;
+}

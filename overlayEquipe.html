@@ -1,0 +1,106 @@
+<!-- Modal "Conheça Nossa Equipe" -->
+<div class="modal fade" id="overlayEquipe" tabindex="-1" aria-labelledby="overlayEquipeLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="overlayEquipeLabel">Conheça Nossa Equipe</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="equipe-container">
+                    <div class="equipe-item destaque">
+                        <div class="foto-circulo grande">
+                            <img src="./assets/natilenePipetando.jpeg" alt="Foto de Natilene">
+                        </div>
+                        <div class="nome-função">
+                            <p class="nome"><span class="primeiro-nome">Natilene</span> <span class="sobrenome">Mesquita</span></p>
+                            <p class="funcao">Fundadora</p>
+                        </div>
+                        <!-- Botão verde para abrir o modal "Me Conheça" -->
+                        <a href="#" class="btn btn-success no-link-style" id="btnMeConheca" data-bs-toggle="modal" data-bs-target="#overlay11">Me Conheça</a>
+                    </div>
+                </div>
+
+                <!-- Espaço para os grupos de pesquisa -->
+                <div class="grupo-pesquisa">
+                    <h5>Grupo de Pesquisa</h5>
+                    <p>Temos membros de diversas áreas, incluindo:</p>
+                    <div class="fotos-grupo">
+                        <!-- Foto 1 -->
+                        <div class="foto-item">
+                            <div class="foto-quadrada">
+                                <img src="./assets/gabiCONGRESSO.jpeg" alt="Alunos de Graduação">
+                            </div>
+                            <p class="foto-legenda">Alunos de Graduação</p>
+                        </div>
+
+                        <!-- Foto 2 -->
+                        <div class="foto-item">
+                            <div class="foto-quadrada">
+                                <img src="./assets/gabiCONGRESSO.jpeg" alt="Mestrandos">
+                            </div>
+                            <p class="foto-legenda">Mestrandos</p>
+                        </div>
+
+                        <!-- Foto 3 -->
+                        <div class="foto-item">
+                            <div class="foto-quadrada">
+                                <img src="./assets/gabiCONGRESSO.jpeg" alt="Doutorandos">
+                            </div>
+                            <p class="foto-legenda">Doutorandos</p>
+                        </div>
+
+                        <!-- Foto 4 -->
+                        <div class="foto-item">
+                            <div class="foto-quadrada">
+                                <img src="./assets/gabiCONGRESSO.jpeg" alt="Técnicos">
+                            </div>
+                            <p class="foto-legenda">Técnicos</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal "Me Conheça" -->
+<div class="modal fade" id="overlay11" tabindex="-1" aria-labelledby="overlay11Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="overlay11Label">Conheça mais sobre Natilene Mesquita</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Aqui você pode colocar mais informações sobre Natilene Mesquita...</p>
+                <p>Detalhes...</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Identificar o botão que abre o modal "Me Conheça"
+        const btnMeConheca = document.getElementById('btnMeConheca');
+        
+        // Definir o evento de clique para o botão "Me Conheça"
+        btnMeConheca.addEventListener('click', function() {
+            // Fechar o modal atual (overlayEquipe)
+            var modalEquipe = new bootstrap.Modal(document.getElementById('overlayEquipe'));
+            modalEquipe.hide();  // Fecha o modal "overlayEquipe"
+
+            // Esperar um pequeno tempo para garantir que o modal "overlayEquipe" feche antes de abrir o próximo modal
+            setTimeout(function() {
+                // Abrir o modal "Me Conheça" (overlay11)
+                var modalMeConheca = new bootstrap.Modal(document.getElementById('overlay11'));
+                modalMeConheca.show();  // Abre o modal "overlay11"
+            }, 300); // 300ms de atraso (tempo de transição do fechamento do modal)
+        });
+    });
+</script>

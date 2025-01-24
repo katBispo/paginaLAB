@@ -1,0 +1,52 @@
+.equipe-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 pessoas por linha */
+    gap: 20px;
+    justify-items: center; /* Centraliza os itens na coluna */
+  }
+  
+  .equipe-item {
+    text-align: center;
+    width: 120px;
+  }
+  
+  .foto-circulo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+    border: 2px solid #007bff;
+  }
+  
+  .foto-circulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .nome {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .btn-conheca {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  
+  .equipe-item.destaque {
+    grid-column: span 4; /* Ocupa toda a linha */
+  }
+  
+  .modal-dialog {
+    max-width: 80%; /* Aumenta a largura do modal */
+    width: 100%; /* Faz com que o modal ocupe a largura total permitida */
+    height: auto; /* Permite que o conteúdo aumente na altura conforme necessário */
+  }
+  
+  .modal-content {
+    padding: 20px; /* Adiciona algum preenchimento interno para dar espaço ao conteúdo */
+  }
+  

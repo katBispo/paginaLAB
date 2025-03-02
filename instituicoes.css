@@ -1,0 +1,112 @@
+/* Estiliza o modal */
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabeçalho do modal */
+.modal-header {
+    background-color: #004d40; /* Verde escuro */
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Corpo do modal */
+.modal-body {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container principal */
+.instituicao-container {
+    font-family: Arial, sans-serif;
+}
+
+/* Lista de benefícios */
+.instituicao-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.instituicao-container ul li {
+    padding: 8px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instituicao-container ul li::before {
+    content: "✔";
+    color: #00897b; /* Verde */
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Estiliza os serviços */
+.servicos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.servico-item {
+    width: 150px;
+    text-align: center;
+}
+
+.servico-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #00897b;
+}
+
+.servico-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #004d40;
+}
+
+/* Seção de contato */
+.contato-instituicao {
+    margin-top: 20px;
+    background-color: #e0f2f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.contato-instituicao h5 {
+    color: #004d40;
+    font-weight: bold;
+}
+
+.contato-instituicao .btn {
+    background-color: #00897b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s;
+}
+
+.contato-instituicao .btn:hover {
+    background-color: #00695c;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .servicos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico-item {
+        width: 80%;
+    }
+}

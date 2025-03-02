@@ -7,16 +7,17 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.84.0">
-  <title>Carousel Template · Bootstrap v5.0</title>
+  <title>PORTAL GEA</title>
+
+  <link rel="icon" href="./assets/GEA_LOGO.png" type="image/x-icon">
+
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Bootstrap core CSS -->
-  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     .bd-placeholder-img {
@@ -31,6 +32,33 @@
       .bd-placeholder-img-lg {
         font-size: 3.5rem;
       }
+    }
+
+    .row {
+      display: flex;
+      align-items: stretch;
+      /* Faz todas as colunas terem a mesma altura */
+    }
+
+    .col-lg-4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .content {
+      flex-grow: 1;
+      /* Faz os textos ocuparem o mesmo espaço */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      /* Mantém os botões alinhados no final */
+    }
+
+    .bd-placeholder-img {
+      margin-bottom: 15px;
+      /* Espaço entre a imagem e o texto */
     }
   </style>
 
@@ -48,7 +76,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="./assets/GEA_LOGO.png" alt="LOGO GEA" width="100" height="60">
+          <img src="../assets/GEA_LOGO.png" alt="LOGO GEA" width="100" height="60">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,389 +112,408 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
+      <div class="carousel-inner">
 
-
-      <div class="carousel-item active">
-        <div style="position: relative; width: 100%; height: 100%;">
-            <img src="./assets/equip_GEA.jpeg" alt="Descrição da Imagem" style="width: 100%; height: 100%; object-fit: cover;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+        <div class="carousel-item active">
+          <div style="position: relative; width: 100%; height: 100%;">
+            <img src="./assets/equip_GEA.jpeg" alt="Descrição da Imagem"
+              style="width: 100%; height: 100%; object-fit: cover;">
+            <div
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
             </div>
+
             <div class="container">
-                <div class="carousel-caption text-start">
-                    <h1 style="color: white;">Equipe.</h1>
-                    <p style="color: white;">Somos uma equipe composta por alunos, professores, técnicos e pesquisadores dedicados à excelência e inovação.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#overlayEquipe">Venha nos Conhecer</a></p>
-                </div>
-                <div id="overlay-equipe-container"></div> <!-- Container para o conteúdo do modal -->
+              <div class="carousel-caption text-start">
+                <h1 style="color: white;">Equipe.</h1>
+                <p style="color: white;">Somos uma equipe composta por alunos, professores, técnicos e pesquisadores
+                  dedicados à excelência e inovação.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal"
+                    data-bs-target="#overlayEquipe">Venha
+                    nos Conhecer</a></p>
+              </div>
+              <div id="overlay-equipe-container"></div> <!-- Container para o conteúdo do modal -->
+
             </div>
+          </div>
         </div>
-    </div>
-    
 
 
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" height="100%" fill="#777" />
-        </svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Portal GEA</h1>
-            <p>Bem-vindo ao nosso website! Aqui você pode conhecer mais sobre nós e descobrir os serviços que
-              oferecemos.</p>
-            <p>
-              <a class="btn btn-lg btn-primary" id="btnSaibaMais" href="#" data-bs-toggle="modal"
-                data-bs-target="#overlayPortalGEA">
-                Saiba Mais
-              </a>
-            </p>
+        <div class="carousel-item">
+          <div style="position: relative; width: 100%; height: 100%;">
+            <img src="./assets/chokito vacilao.png" alt="Descrição da Imagem"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
           </div>
-          <div id="overlay-portal-gea-container"></div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" height="100%" fill="#777" />
-        </svg>
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Conheça Nosso Corpo Docente</h1>
-            <p>Uma equipe de profissionais experientes e qualificados, referência em química e educação, dedicada a
-              compartilhar conhecimento e promover a excelência em nossas atividades.</p>
-            <p>
-              <a class="btn btn-lg btn-primary" id="btnConhecaCorpoDocente" href="#" data-bs-toggle="modal"
-                data-bs-target="#overlayCorpoDocente">
-                Venha nos Conhecer
-              </a>
-            </p>
+          <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
           </div>
-          <div id="overlay-corpo-docente-container"></div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    </div>
-
-
-    <!-- Marketing messaging and featurettes
-  ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2>Empresas</h2>
-          <p> O GEA convida empresas a colaborar em projetos de sustentabilidade. Juntos, podemos desenvolver soluções
-            ambientais inovadoras e impactantes.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2>Instituiçõess</h2>
-          <p>O GEA convida instituições de ensino público e privadas a colaborar em projetos de sustentabilidade.
-            Juntos, podemos desenvolver soluções ambientais inovadoras e impactantes, promovendo a preservação do meio
-            ambiente e a saúde pública.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-          </svg>
-
-          <h2>Parceiros Internacionais</h2>
-          <p>O GEA busca parcerias com instituições internacionais para promover projetos de sustentabilidade. Juntos,
-            podemos compartilhar conhecimentos e desenvolver soluções ambientais inovadoras que beneficiem o mundo
-            todo..</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">O GEA nas Palavras de Sua Fundadora</h2>
-          <h3 class="text-muted">A Visão de Natilene Mesquita Brito</h3>
-
-          <p class="lead">O Grupo de Pesquisa em Estudos Ambientais (GEA) foi criado com a visão de contribuir para o
-            conhecimento e preservação do meio ambiente, impulsionado pela motivação de sua fundadora e líder, Natilene
-            Mesquita Brito. Com uma dedicação profunda em química analítica e ambiental, o GEA iniciou-se com o objetivo
-            de investigar e entender como compostos orgânicos emergentes e poluentes impactam os ecossistemas e,
-            consequentemente, a saúde humana. Ela acreditava que uma abordagem interdisciplinar poderia desvendar
-            mistérios ambientais ainda pouco compreendidos, promovendo a ciência como um aliado fundamental para a
-            conservação ambiental.</p>
-        </div>
-        <div class="col-md-5">
-          <img src="./assets/natilene.jpeg"
-            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
-            alt="Descrição da imagem">
-
-
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-      <div class="container px-1 py-1" id="icon-grid">
-        <h2 class="pb-2 border-bottom">Pesquisas Desenvolvidas ao Longo de 20 Anos</h2>
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-          <div class="col d-flex align-items-start">
-            <i class="fas fa-flask text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
-            <div>
-              <h4 class="fw-bold mb-0" style="font-size: 20px;">
-                <a href="#overlay1" class="no-link-style" data-bs-toggle="modal">Análise de Compostos Orgânicos
-                  Emergentes</a>
-              </h4>
-              <p>compostos emergentes, como fármacos, pesticidas e biocidas, que afetam a qualidade das águas de rios e
-                estuários.</p>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <i class="fas fa-microchip text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
-            <div>
-              <h4 class="fw-bold mb-0" style="font-size: 20px;">
-                <a href="#overlay2" class="no-link-style" data-bs-toggle="modal">Análise de Contaminantes
-                  Inorgânicos</a>
-              </h4>
-              <p>Poluentes em águas superficiais (rios, lagos e estuários) e subterrâneas (lençóis freáticos e
-                aquíferos), incluindo metais pesados, cátions e ânions.</p>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <i class="fas fa-calendar-alt text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
-            <div>
-              <h4 class="fw-bold mb-0" style="font-size: 20px;">
-                <a href="#overlay3" class="no-link-style" data-bs-toggle="modal">Biomonitoramento de Ecossistemas
-                  Aquáticos</a>
-              </h4>
-              <p>O GEA tem sido pioneiro no uso de técnicas de biomonitoramento para avaliar a saúde de ecossistemas
-                aquáticos.</p>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <i class="fas fa-home text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
-            <div>
-              <h4 class="fw-bold mb-0" style="font-size: 20px;">
-                <a href="#overlay4" class="no-link-style" data-bs-toggle="modal">Desenvolvimento de Métodos de
-                  Amostragem Passiva</a>
-              </h4>
-              <p>O grupo dedicou esforços ao desenvolvimento de amostradores passivos para a coleta de compostos
-                orgânicos.</p>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <i class="fas fa-tachometer-alt text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
-            <div>
-              <h4 class="fw-bold mb-0" style="font-size: 20px;">
-                <a href="#overlay5" class="no-link-style" data-bs-toggle="modal">Estudo de Efeitos Tóxicos e
-                  Genotóxicos</a>
-              </h4>
-              <p>O GEA conduziu experimentos laboratoriais e estudos de campo para avaliar como a exposição prolongada a
-                poluentes pode gerar mutações, afetar o desenvolvimento e comprometer a reprodução de espécies.</p>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <i class="fas fa-toggle-on text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
-            <div>
-              <h4 class="fw-bold mb-0" style="font-size: 20px;">
-                <a href="#overlay6" class="no-link-style" data-bs-toggle="modal">Desenvolvimento de Softwares Para
-                  Laboratórios
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Portal GEA</h1>
+              <p style="color: white;">Bem-vindo ao nosso website! Aqui você pode conhecer mais sobre nós e descobrir os
+                serviços que oferecemos.</p>
+              <p>
+                <a class="btn btn-lg btn-primary" id="btnSaibaMais" href="#" data-bs-toggle="modal"
+                  data-bs-target="#overlayPortalGEA">
+                  Saiba Mais
                 </a>
-              </h4>
-              <p>O Grupo de Estudos em Análises (GEA) desenvolve softwares personalizados para laboratórios, sistemas de
-                gestão e monitoramento de analitos, integrando ciência e tecnologia para otimizar processos e garantir
-                resultados confiáveis</p>
+              </p>
             </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <i class="fas fa-tachometer-alt text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
-            <div>
-              <h4 class="fw-bold mb-0" style="font-size: 20px;">
-                <a href="#overlay5" class="no-link-style" data-bs-toggle="modal">Estudo de Efeitos Tóxicos e
-                  Genotóxicos</a>
-              </h4>
-              <p>O GEA conduziu experimentos laboratoriais e estudos de campo para avaliar como a exposição prolongada a
-                poluentes pode gerar mutações, afetar o desenvolvimento e comprometer a reprodução de espécies.</p>
-            </div>
-          </div>
+            <div id="overlay-portal-gea-container"></div>
 
-
+          </div>
         </div>
+
+
+        <div class="carousel-item">
+          <div style="position: relative; width: 100%; height: 100%;">
+            <img src="./assets/fotoGRUPO.jpeg" alt="Imagem do Corpo Docente"
+              style="width: 100%; height: 100%; object-fit: cover;">
+            <div
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+            </div>
+
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1 style="color: white;">Conheça Nosso Corpo Docente</h1>
+                <p style="color: white;">Uma equipe de profissionais experientes e qualificados, referência em química e
+                  educação, dedicada a compartilhar conhecimento e promover a excelência em nossas atividades.</p>
+                <p>
+                  <a class="btn btn-lg btn-primary" id="btnConhecaCorpoDocente" href="#" data-bs-toggle="modal"
+                    data-bs-target="#overlayCorpoDocente">
+                    Venha nos Conhecer
+                  </a>
+                </p>
+              </div>
+              <div id="overlay-corpo-docente-container"></div>
+
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
-      <!-- Container para os overlays -->
-      <div id="overlay-container"></div>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-      <script>
-        // Carregar o conteúdo dos overlays
-        fetch('overlay.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('overlay-container').innerHTML = data;
-          });
-      </script>
+      <!-- Marketing messaging and featurettes
+  ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+      <div style="height: 80px;"></div>
 
-<script>
-  // Carregar os modais do carrossel
-  fetch('overlayCarrosel.html')
-      .then(response => response.text())
-      .then(data => {
-          // Carregar o conteúdo do modal no container correto
+      <div class="container marketing">
+
+        <!-- PARCEIROS -->
+        <div class="row">
           
-          document.getElementById('overlay-portal-gea-container').innerHTML = data; 
-
-          // Inicializar os modais do Bootstrap após o carregamento do conteúdo
-          var modals = document.querySelectorAll('.modal');
-          modals.forEach(function (modalElement) {
-              new bootstrap.Modal(modalElement);
-          });
-      });
-</script>
-
-<script>
-  // Carregar o conteúdo do modal do carrossel
-  fetch('overlayEquipe.html')
-    .then(response => response.text())
-    .then(data => {
-        // Carregar o conteúdo do modal no container correto
-        document.getElementById('overlay-equipe-container').innerHTML = data;
-
-        // Inicializar os modais do Bootstrap após o carregamento do conteúdo
-        var modals = document.querySelectorAll('.modal');
-        modals.forEach(function (modalElement) {
-            new bootstrap.Modal(modalElement);
-        });
-    });
-</script>
-
-
-<script>
-  // Carregar o conteúdo do modal do carrossel
-  fetch('overlayCorpoDocente.html')
-    .then(response => response.text())
-    .then(data => {
-        // Carregar o conteúdo do modal no container correto
-        document.getElementById('overlay-corpo-docente-container').innerHTML = data;
-
-        // Inicializar os modais do Bootstrap após o carregamento do conteúdo
-        var modals = document.querySelectorAll('.modal');
-        modals.forEach(function (modalElement) {
-            new bootstrap.Modal(modalElement);
-        });
-    });
-</script>
-
-
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Pesquisa e Inovação <span class="text-muted">a Serviço da Ciência e
-              Tecnologia.</span></h2>
-          <p class="lead">Somos um grupo de pesquisa formado por profissionais em formação altamente capacitados, com
-            experiência prática em laboratórios analíticos, atuação em campo e desenvolvimento de soluções
-            personalizadas. Unimos dedicação acadêmica, rigor científico e inovação para atender às demandas das
-            empresas, oferecendo resultados confiáveis e alinhados às suas necessidades.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <!-- Primeira imagem -->
-              <div class="carousel-item active">
-                <img src="./assets/myrnaLAB.jpeg" class="d-block w-100" alt="Foto 1">
-              </div>
-              <!-- Segunda imagem -->
-              <div class="carousel-item">
-                <img src="./assets/eltonRIO.jpeg" class="d-block w-100" alt="Foto 2">
-              </div>
-              <!-- Terceira imagem -->
-              <div class="carousel-item">
-                <img src="./assets/ricardoPC.jpeg" class="d-block w-100" alt="Foto 3">
-              </div>
-
-              <div class="carousel-item">
-                <img src="./assets/gabiMAQUINA.jpeg" class="d-block w-100" alt="Foto 3">
-              </div>
-
+          <div class="col-lg-4">
+            <img src="./assets/companhia.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
+              style="object-fit: cover;">
+            <div class="content">
+              <h2>Empresas</h2>
+              <p>O GEA convida empresas a colaborar em projetos de pesquisa e inovação ambiental. Descubra como podemos
+                trabalhar juntos.</p>
+              <p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#empresasGEA">
+                  Saiba mais &raquo;
+                </button>
+              </p>
             </div>
-            <!-- Botão para navegação à esquerda -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <!-- Botão para navegação à direita -->
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Próximo</span>
-            </button>
+          </div>
+
+
+          <div class="col-lg-4">
+            <img src="./assets/instituicao.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
+              style="object-fit: cover;">
+            <div class="content">
+              <h2>Instituições</h2>
+              <p>O GEA convida instituições de ensino público e privadas a colaborar em projetos de sustentabilidade.
+                Juntos, podemos desenvolver soluções ambientais inovadoras e impactantes, promovendo a preservação do
+                meio ambiente e a saúde pública.</p>
+              <p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#instituicoesGEA">
+                  Saiba mais &raquo;
+                </button>
+              </p>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <img src="./assets/internacional.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
+              style="object-fit: cover;">
+            <div class="content">
+              <h2>Parceiros Internacionais</h2>
+              <p>O GEA busca parcerias com instituições internacionais para promover projetos de sustentabilidade.
+                Juntos, podemos compartilhar conhecimentos e desenvolver soluções ambientais inovadoras que beneficiem o
+                mundo todo.</p>
+              <p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#internacionalGEA">
+                  Saiba mais &raquo;
+                </button>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">O GEA nas Palavras de Sua Fundadora</h2>
+            <h3 class="text-muted">A Visão de Natilene Mesquita Brito</h3>
+
+            <p class="lead">O Grupo de Pesquisa em Estudos Ambientais (GEA) foi criado com a visão de contribuir para o
+              conhecimento e preservação do meio ambiente, impulsionado pela motivação de sua fundadora e líder,
+              Natilene Mesquita Brito. Com uma dedicação profunda em química analítica e ambiental, o GEA iniciou-se com
+              o objetivo de investigar e entender como compostos orgânicos emergentes e poluentes impactam os
+              ecossistemas e, consequentemente, a saúde humana. Ela acreditava que uma abordagem interdisciplinar
+              poderia desvendar mistérios ambientais ainda pouco compreendidos, promovendo a ciência como um aliado
+              fundamental para a conservação ambiental.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="../assets/natilene.jpeg"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+              height="500" alt="Descrição da imagem">
 
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-            intended to be actually read, simply here to give you a better view of what this would look like with some
-            actual content. Your content.</p>
+          </div>
         </div>
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
 
+        <hr class="featurette-divider">
+        <div class="container px-1 py-1" id="icon-grid">
+          <h2 class="pb-2 border-bottom">Pesquisas Desenvolvidas ao Longo de 20 Anos</h2>
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+            <div class="col d-flex align-items-start">
+              <i class="fas fa-flask text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+              <div>
+                <h4 class="fw-bold mb-0" style="font-size: 20px;">
+                  <a href="#overlay1" class="no-link-style" data-bs-toggle="modal">Análise de Compostos Orgânicos
+                    Emergentes</a>
+                </h4>
+                <p>compostos emergentes, como fármacos, pesticidas e biocidas, que afetam a qualidade das águas de rios
+                  e estuários.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <i class="fas fa-microchip text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+              <div>
+                <h4 class="fw-bold mb-0" style="font-size: 20px;">
+                  <a href="#overlay2" class="no-link-style" data-bs-toggle="modal">Análise de Contaminantes
+                    Inorgânicos</a>
+                </h4>
+                <p>Poluentes em águas superficiais (rios, lagos e estuários) e subterrâneas (lençóis freáticos e
+                  aquíferos), incluindo metais pesados, cátions e ânions.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <i class="fas fa-calendar-alt text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+              <div>
+                <h4 class="fw-bold mb-0" style="font-size: 20px;">
+                  <a href="#overlay3" class="no-link-style" data-bs-toggle="modal">Biomonitoramento de Ecossistemas
+                    Aquáticos</a>
+                </h4>
+                <p>O GEA tem sido pioneiro no uso de técnicas de biomonitoramento para avaliar a saúde de ecossistemas
+                  aquáticos.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <i class="fas fa-home text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+              <div>
+                <h4 class="fw-bold mb-0" style="font-size: 20px;">
+                  <a href="#overlay4" class="no-link-style" data-bs-toggle="modal">Desenvolvimento de Métodos de
+                    Amostragem Passiva</a>
+                </h4>
+                <p>O grupo dedicou esforços ao desenvolvimento de amostradores passivos para a coleta de compostos
+                  orgânicos.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <i class="fas fa-tachometer-alt text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+              <div>
+                <h4 class="fw-bold mb-0" style="font-size: 20px;">
+                  <a href="#overlay5" class="no-link-style" data-bs-toggle="modal">Estudo de Efeitos Tóxicos e
+                    Genotóxicos</a>
+                </h4>
+                <p>O GEA conduziu experimentos laboratoriais e estudos de campo para avaliar como a exposição prolongada
+                  a poluentes pode gerar mutações, afetar o desenvolvimento e comprometer a reprodução de espécies.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <i class="fas fa-toggle-on text-muted flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+              <div>
+                <h4 class="fw-bold mb-0" style="font-size: 20px;">
+                  <a href="#overlay6" class="no-link-style" data-bs-toggle="modal">Estudos de Impacto Ambiental em
+                    Regiões Costeiras</a>
+                </h4>
+                <p>O GEA desenvolve estudos de impacto ambiental em áreas costeiras, particularmente em portos e áreas
+                  de intensa atividade humana.</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <hr class="featurette-divider">
+        <!-- Container para os overlays -->
 
-      <!-- /END THE FEATURETTES -->
+        <!-- Container para os overlays -->
+        <div id="overlay-container"></div>
+        <div id="overlay-instituicoes-container"></div>
+        <div id="overlay-empresas-container"></div>
+        <div id="overlay-internacionais-container"></div>
 
-    </div><!-- /.container -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+        <script>
+          // Carregar o conteúdo dos overlays
+          fetch('overlay.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('overlay-container').innerHTML = data;
+            });
+        </script>
+
+        <script>
+          // Carregar os modais do carrossel
+          fetch('overlayCarrosel.html')
+            .then(response => response.text())
+            .then(data => {
+              // Carregar o conteúdo do modal no container correto
+
+              document.getElementById('overlay-portal-gea-container').innerHTML = data;
+
+              // Inicializar os modais do Bootstrap após o carregamento do conteúdo
+              var modals = document.querySelectorAll('.modal');
+              modals.forEach(function (modalElement) {
+                new bootstrap.Modal(modalElement);
+              });
+            });
+        </script>
+
+        <script>
+          // Carregar o conteúdo do modal do carrossel
+          fetch('overlayEquipe.html')
+            .then(response => response.text())
+            .then(data => {
+              // Carregar o conteúdo do modal no container correto
+              document.getElementById('overlay-equipe-container').innerHTML = data;
+
+              // Inicializar os modais do Bootstrap após o carregamento do conteúdo
+              var modals = document.querySelectorAll('.modal');
+              modals.forEach(function (modalElement) {
+                new bootstrap.Modal(modalElement);
+              });
+            });
+        </script>
 
 
-    <!-- FOOTER -->
-    <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
+        <script>
+          // Carregar o conteúdo do modal do carrossel
+          fetch('overlayCorpoDocente.html')
+            .then(response => response.text())
+            .then(data => {
+              // Carregar o conteúdo do modal no container correto
+              document.getElementById('overlay-corpo-docente-container').innerHTML = data;
+
+              // Inicializar os modais do Bootstrap após o carregamento do conteúdo
+              var modals = document.querySelectorAll('.modal');
+              modals.forEach(function (modalElement) {
+                new bootstrap.Modal(modalElement);
+              });
+            });
+        </script>
+
+
+        <script>
+          // Carregar o conteúdo do modal para Instituições
+          fetch('EmpresasSaibaMais.html')
+            .then(response => response.text())
+            .then(data => {
+              // Inserir o conteúdo do modal no container correto
+              document.getElementById('overlay-empresas-container').innerHTML = data;
+
+              // Inicializar os modais do Bootstrap após o carregamento do conteúdo
+              var modals = document.querySelectorAll('.modal');
+              modals.forEach(function (modalElement) {
+                new bootstrap.Modal(modalElement);
+              });
+            });
+        </script>
+
+
+
+        <script>
+          // Carregar o conteúdo do modal para Instituições
+          fetch('InstituicoesSaibaMais.html')
+            .then(response => response.text())
+            .then(data => {
+              // Inserir o conteúdo do modal no container correto
+              document.getElementById('overlay-instituicoes-container').innerHTML = data;
+
+              // Inicializar os modais do Bootstrap após o carregamento do conteúdo
+              var modals = document.querySelectorAll('.modal');
+              modals.forEach(function (modalElement) {
+                new bootstrap.Modal(modalElement);
+              });
+            });
+        </script>
+
+
+
+        <script>
+          // Carregar o conteúdo do modal para Instituições
+          fetch('InternacionaisSaibaMais.html')
+            .then(response => response.text())
+            .then(data => {
+              // Inserir o conteúdo do modal no container correto
+              document.getElementById('overlay-internacionais-container').innerHTML = data;
+
+              // Inicializar os modais do Bootstrap após o carregamento do conteúdo
+              var modals = document.querySelectorAll('.modal');
+              modals.forEach(function (modalElement) {
+                new bootstrap.Modal(modalElement);
+              });
+            });
+        </script>
+
+
+
+      
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Conheça o LAC. <span class="text-muted">Nosso laboratório de análises cromatográficas.</span></h2>
+            <p class="lead">No LAC, combinamos expertise e tecnologia para fornecer análises cromatográficas detalhadas, auxiliando no desenvolvimento de soluções mais seguras e eficientes..</p>
+          </div>
+          <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+              height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+            </svg>
+
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">voltar para o topo</a></p>
+        <p>&copy; 2024–2026 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
   </main>
 
 

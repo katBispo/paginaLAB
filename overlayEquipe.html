@@ -1,4 +1,6 @@
 <!-- Modal "Conheça Nossa Equipe" -->
+
+
 <div class="modal fade" id="overlayEquipe" tabindex="-1" aria-labelledby="overlayEquipeLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -9,17 +11,17 @@
             <div class="modal-body">
                 <div class="equipe-container">
                     <div class="equipe-item destaque">
-                        <div class="foto-circulo grande">
+                        <div class="foto-circulo grandeNatilene">
                             <img src="./assets/natilenePipetando.jpeg" alt="Foto de Natilene">
                         </div>
                         <div class="nome-função">
                             <p class="nome"><span class="primeiro-nome">Natilene</span> <span class="sobrenome">Mesquita</span></p>
-                            <p class="funcao">Fundadora</p>
                         </div>
                         <!-- Botão verde para abrir o modal "Me Conheça" -->
                         <a href="#" class="btn btn-success no-link-style" id="btnMeConheca" data-bs-toggle="modal" data-bs-target="#overlay11">Me Conheça</a>
                     </div>
                 </div>
+                <div style="height: 30px;"></div>
 
                 <!-- Espaço para os grupos de pesquisa -->
                 <div class="grupo-pesquisa">
@@ -29,7 +31,7 @@
                         <!-- Foto 1 -->
                         <div class="foto-item">
                             <div class="foto-quadrada">
-                                <img src="./assets/gabiCONGRESSO.jpeg" alt="Alunos de Graduação">
+                                <img src="./assets/fotoGRUPO.jpeg" alt="Alunos de Graduação">
                             </div>
                             <p class="foto-legenda">Alunos de Graduação</p>
                         </div>
@@ -45,7 +47,7 @@
                         <!-- Foto 3 -->
                         <div class="foto-item">
                             <div class="foto-quadrada">
-                                <img src="./assets/gabiCONGRESSO.jpeg" alt="Doutorandos">
+                                <img src="./assets/equip_GEA.jpeg" alt="Doutorandos">
                             </div>
                             <p class="foto-legenda">Doutorandos</p>
                         </div>
@@ -53,7 +55,7 @@
                         <!-- Foto 4 -->
                         <div class="foto-item">
                             <div class="foto-quadrada">
-                                <img src="./assets/gabiCONGRESSO.jpeg" alt="Técnicos">
+                                <img src="./assets/myrnaLAB.jpeg" alt="Técnicos">
                             </div>
                             <p class="foto-legenda">Técnicos</p>
                         </div>
@@ -64,7 +66,6 @@
         </div>
     </div>
 </div>
-
 <!-- Modal "Me Conheça" -->
 <div class="modal fade" id="overlay11" tabindex="-1" aria-labelledby="overlay11Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -73,9 +74,15 @@
                 <h5 class="modal-title" id="overlay11Label">Conheça mais sobre Natilene Mesquita</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <p>Aqui você pode colocar mais informações sobre Natilene Mesquita...</p>
-                <p>Detalhes...</p>
+            <div class="modal-body d-flex">
+                <!-- Texto à esquerda -->
+                <div class="modal-text" style="flex: 1; padding-right: 20px;">
+                    <p>Pós-Doutorado em Análise de Poluentes Orgânicos Emergentes em Amostras Biológicas pelo Instituto Politécnico do Porto (2022). Doutora em Química (Química Analítica) pela Universidade de São Paulo (2005), Mestre em Química pela Universidade Estadual Paulista Júlio de Mesquita Filho (2001) e graduada em Química Industrial pela Universidade Federal do Maranhão (1998).Atuou como Pró-Reitora de Pesquisa, Pós-Graduação e Inovação (PRPGI) do Instituto Federal do Maranhão (IFMA) entre 2012 e 2020 e como Diretora de Pesquisa, Pós-Graduação e Inovação de 2008 a 2012. Atualmente, é Professora Titular do IFMA, onde integra o corpo docente permanente do Programa de Pós-Graduação em Química Mestrado e do Doutorado em Química em Associação IFMA/UFMA, bem como do Mestrado Profissional em Rede Nacional em Gestão e Regulação de Recursos Hídricos, polo UEMA.Possui ampla experiência em Química Analítica, com ênfase em análise de traços e química ambiental. Suas principais áreas de atuação incluem: qualidade da água, monitoramento e análise de pesticidas, poluentes orgânicos emergentes, cromatografia, validação de métodos analíticos, análise toxicológica de alimentos e educação ambiental. Seu índice H é 14, evidenciando a relevância e o impacto de sua produção científica no meio acadêmico. (Texto informado pelo autor)</p>
+                </div>
+                <!-- Foto à direita -->
+                <div class="modal-image" style="width: 150px;">
+                    <img src="./assets/natilenePipetando.jpeg" alt="Foto de Natilene" class="img-fluid" style="width: 100%; height: auto; object-fit: cover;">
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -83,6 +90,7 @@
         </div>
     </div>
 </div>
+
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {

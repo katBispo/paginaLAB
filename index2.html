@@ -34,6 +34,37 @@
         font-size: 3.5rem;
       }
     }
+
+    .row {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .col-lg-4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .bd-placeholder-img {
+      margin-bottom: 15px;
+    }
+    .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
   </style>
 
 
@@ -86,7 +117,7 @@
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-
+      <div class="carousel-inner">
 
       <div class="carousel-item active">
         <div style="position: relative; width: 100%; height: 100%;">
@@ -103,11 +134,11 @@
               <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#overlayEquipe">Venha
                   nos Conhecer</a></p>
             </div>
-            <div id="overlay-equipe-container"></div> <!-- Container para o conteúdo do modal -->
+            <div id="overlay-equipe-container"></div> 
           </div>
         </div>
       </div>
-
+   
 
 
       <div class="carousel-item">
@@ -142,6 +173,7 @@
           <div
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
           </div>
+
           <div class="container">
             <div class="carousel-caption text-start">
               <h1 style="color: white;">Conheça Nosso Corpo Docente</h1>
@@ -160,7 +192,6 @@
       </div>
 
     </div>
-    </div>
 
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -170,22 +201,102 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-    </div>
+  </div>
+
+        <!-- VALORES -->
 
 
-    <!-- Marketing messaging and featurettes
-  ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-   
+        <div class="container mt-5">
+          <div class="row text-center">
+            <div class="col-md-4 d-flex">
+              <div class="card border-0 shadow-lg p-4 w-100 h-100 d-flex flex-column">
+                <h3 class="text-primary">Missão</h3>
+                <p class="flex-grow-1">Nossa missão é proporcionar inovação e excelência no ensino, pesquisa e desenvolvimento tecnológico.</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="card border-0 shadow-lg p-4 w-100 h-100 d-flex flex-column">
+                <h3 class="text-success">Visão</h3>
+                <p class="flex-grow-1">Ser referência nacional e internacional em soluções tecnológicas e educacionais de alto impacto.</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex">
+              <div class="card border-0 shadow-lg p-4 w-100 h-100 d-flex flex-column">
+                <h3 class="text-warning">Valores</h3>
+                <ul class="list-unstyled flex-grow-1">
+                  <li>🔹 Ética e transparência</li>
+                  <li>🔹 Compromisso com a inovação</li>
+                  <li>🔹 Sustentabilidade e responsabilidade social</li>
+                  <li>🔹 Respeito à diversidade</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
 
 
-    <!-- START THE FEATURETTES -->
 
 
-      <!-- START THE FEATURETTES -->
+        <div style="height: 80px;"></div>
 
-      <hr class="featurette-divider">
+
+
+    <div class="container marketing">
+        <!-- PARCEIROS -->
+        <div class="row">
+          
+          <div class="col-lg-4">
+            <img src="./assets/companhia.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
+              style="object-fit: cover;">
+            <div class="content">
+              <h2>Empresas</h2>
+              <p>O GEA convida empresas a colaborar em projetos de pesquisa e inovação ambiental. Descubra como podemos
+                trabalhar juntos.</p>
+              <p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#empresasGEA">
+                  Saiba mais &raquo;
+                </button>
+              </p>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <img src="./assets/instituicao.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
+              style="object-fit: cover;">
+            <div class="content">
+              <h2>Instituições</h2>
+              <p>O GEA convida instituições de ensino público e privadas a colaborar em projetos de sustentabilidade.
+                Juntos, podemos desenvolver soluções ambientais inovadoras e impactantes, promovendo a preservação do
+                meio ambiente e a saúde pública.</p>
+              <p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#instituicoesGEA">
+                  Saiba mais &raquo;
+                </button>
+              </p>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <img src="./assets/internacional.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
+              style="object-fit: cover;">
+            <div class="content">
+              <h2>Parceiros Internacionais</h2>
+              <p>O GEA busca parcerias com instituições internacionais para promover projetos de sustentabilidade.
+                Juntos, podemos compartilhar conhecimentos e desenvolver soluções ambientais inovadoras que beneficiem o
+                mundo todo.</p>
+              <p>
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#internacionalGEA">
+                  Saiba mais &raquo;
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
@@ -298,12 +409,10 @@
         </div>
       </div>
 
-      <!-- Container para os overlays -->
       <div id="overlay-container"></div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
       <script>
-        // Carregar o conteúdo dos overlays
         fetch('overlay.html')
           .then(response => response.text())
           .then(data => {
@@ -312,15 +421,12 @@
       </script>
 
       <script>
-        // Carregar os modais do carrossel
         fetch('overlayCarrosel.html')
           .then(response => response.text())
           .then(data => {
-            // Carregar o conteúdo do modal no container correto
 
             document.getElementById('overlay-portal-gea-container').innerHTML = data;
 
-            // Inicializar os modais do Bootstrap após o carregamento do conteúdo
             var modals = document.querySelectorAll('.modal');
             modals.forEach(function (modalElement) {
               new bootstrap.Modal(modalElement);
@@ -329,14 +435,11 @@
       </script>
 
       <script>
-        // Carregar o conteúdo do modal do carrossel
         fetch('overlayEquipe.html')
           .then(response => response.text())
           .then(data => {
-            // Carregar o conteúdo do modal no container correto
             document.getElementById('overlay-equipe-container').innerHTML = data;
 
-            // Inicializar os modais do Bootstrap após o carregamento do conteúdo
             var modals = document.querySelectorAll('.modal');
             modals.forEach(function (modalElement) {
               new bootstrap.Modal(modalElement);
@@ -346,14 +449,11 @@
 
 
       <script>
-        // Carregar o conteúdo do modal do carrossel
         fetch('overlayCorpoDocente.html')
           .then(response => response.text())
           .then(data => {
-            // Carregar o conteúdo do modal no container correto
             document.getElementById('overlay-corpo-docente-container').innerHTML = data;
 
-            // Inicializar os modais do Bootstrap após o carregamento do conteúdo
             var modals = document.querySelectorAll('.modal');
             modals.forEach(function (modalElement) {
               new bootstrap.Modal(modalElement);
@@ -377,15 +477,12 @@
         <div class="col-md-5 order-md-1">
           <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <!-- Primeira imagem -->
               <div class="carousel-item active">
                 <img src="./assets/myrnaLAB.jpeg" class="d-block w-100" alt="Foto 1">
               </div>
-              <!-- Segunda imagem -->
               <div class="carousel-item">
                 <img src="./assets/eltonRIO.jpeg" class="d-block w-100" alt="Foto 2">
               </div>
-              <!-- Terceira imagem -->
               <div class="carousel-item">
                 <img src="./assets/ricardoPC.jpeg" class="d-block w-100" alt="Foto 3">
               </div>
@@ -395,12 +492,10 @@
               </div>
 
             </div>
-            <!-- Botão para navegação à esquerda -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Anterior</span>
             </button>
-            <!-- Botão para navegação à direita -->
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Próximo</span>
@@ -435,7 +530,6 @@
       <!-- /END THE FEATURETTES -->
 
     </div><!-- /.container -->
-
 
     <!-- FOOTER -->
     <footer class="container">

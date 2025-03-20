@@ -57,14 +57,38 @@
     .bd-placeholder-img {
       margin-bottom: 15px;
     }
-    .card-hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
 
-  .card-hover:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-  }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .card ul {
+      padding-left: 0;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .card ul li {
+      list-style: none;
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .card ul li:last-child {
+      border-bottom: none;
+    }
   </style>
 
 
@@ -119,184 +143,192 @@
       </div>
       <div class="carousel-inner">
 
-      <div class="carousel-item active">
-        <div style="position: relative; width: 100%; height: 100%;">
-          <img src="./assets/equip_GEA.jpeg" alt="Descrição da Imagem"
-            style="width: 100%; height: 100%; object-fit: cover;">
-          <div
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
-          </div>
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1 style="color: white;">Equipe.</h1>
-              <p style="color: white;">Somos uma equipe composta por alunos, professores, técnicos e pesquisadores
-                dedicados à excelência e inovação.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#overlayEquipe">Venha
-                  nos Conhecer</a></p>
+        <div class="carousel-item active">
+          <div style="position: relative; width: 100%; height: 100%;">
+            <img src="./assets/equip_GEA.jpeg" alt="Descrição da Imagem"
+              style="width: 100%; height: 100%; object-fit: cover;">
+            <div
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
             </div>
-            <div id="overlay-equipe-container"></div> 
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1 style="color: white;">Equipe.</h1>
+                <p style="color: white;">Somos uma equipe composta por alunos, professores, técnicos e pesquisadores
+                  dedicados à excelência e inovação.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" data-bs-toggle="modal"
+                    data-bs-target="#overlayEquipe">Venha
+                    nos Conhecer</a></p>
+              </div>
+              <div id="overlay-equipe-container"></div>
+            </div>
           </div>
         </div>
-      </div>
-   
 
 
-      <div class="carousel-item">
-        <div style="position: relative; width: 100%; height: 100%;">
-          <img src="./assets/chokito vacilao.png" alt="Descrição da Imagem"
-            style="width: 100%; height: 100%; object-fit: cover;">
-          <div
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
-          </div>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 style="color: white;">Portal GEA</h1>
-              <p style="color: white;">Bem-vindo ao nosso website! Aqui você pode conhecer mais sobre nós e descobrir os
-                serviços que oferecemos.</p>
-              <p>
-                <a class="btn btn-lg btn-primary" id="btnSaibaMais" href="#" data-bs-toggle="modal"
-                  data-bs-target="#overlayPortalGEA">
-                  Saiba Mais
-                </a>
-              </p>
+
+        <div class="carousel-item">
+          <div style="position: relative; width: 100%; height: 100%;">
+            <img src="./assets/chokito vacilao.png" alt="Descrição da Imagem"
+              style="width: 100%; height: 100%; object-fit: cover;">
+            <div
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
             </div>
-            <div id="overlay-portal-gea-container"></div>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 style="color: white;">Portal GEA</h1>
+                <p style="color: white;">Bem-vindo ao nosso website! Aqui você pode conhecer mais sobre nós e descobrir
+                  os
+                  serviços que oferecemos.</p>
+                <p>
+                  <a class="btn btn-lg btn-primary" id="btnSaibaMais" href="#" data-bs-toggle="modal"
+                    data-bs-target="#overlayPortalGEA">
+                    Saiba Mais
+                  </a>
+                </p>
+              </div>
+              <div id="overlay-portal-gea-container"></div>
+            </div>
           </div>
         </div>
-      </div>
 
 
-      <div class="carousel-item">
-        <div style="position: relative; width: 100%; height: 100%;">
-          <img src="./assets/fotoGRUPO.jpeg" alt="Imagem do Corpo Docente"
-            style="width: 100%; height: 100%; object-fit: cover;">
-          <div
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
-          </div>
-
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1 style="color: white;">Conheça Nosso Corpo Docente</h1>
-              <p style="color: white;">Uma equipe de profissionais experientes e qualificados, referência em química e
-                educação, dedicada a compartilhar conhecimento e promover a excelência em nossas atividades.</p>
-              <p>
-                <a class="btn btn-lg btn-primary" id="btnConhecaCorpoDocente" href="#" data-bs-toggle="modal"
-                  data-bs-target="#overlayCorpoDocente">
-                  Venha nos Conhecer
-                </a>
-              </p>
+        <div class="carousel-item">
+          <div style="position: relative; width: 100%; height: 100%;">
+            <img src="./assets/fotoGRUPO.jpeg" alt="Imagem do Corpo Docente"
+              style="width: 100%; height: 100%; object-fit: cover;">
+            <div
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
             </div>
-            <div id="overlay-corpo-docente-container"></div>
+
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1 style="color: white;">Conheça Nosso Corpo Docente</h1>
+                <p style="color: white;">Uma equipe de profissionais experientes e qualificados, referência em química e
+                  educação, dedicada a compartilhar conhecimento e promover a excelência em nossas atividades.</p>
+                <p>
+                  <a class="btn btn-lg btn-primary" id="btnConhecaCorpoDocente" href="#" data-bs-toggle="modal"
+                    data-bs-target="#overlayCorpoDocente">
+                    Venha nos Conhecer
+                  </a>
+                </p>
+              </div>
+              <div id="overlay-corpo-docente-container"></div>
+            </div>
           </div>
         </div>
+
       </div>
 
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-        <!-- VALORES -->
+    <!-- VALORES -->
 
 
-
-        <div class="container mt-5">
-          <div class="row text-center">
-            <div class="col-md-4 d-flex">
-              <div class="card border-0 shadow-lg p-4 w-100 h-100 d-flex flex-column">
-                <h3 class="text-primary">Missão</h3>
-                <p class="flex-grow-1">Nossa missão é proporcionar inovação e excelência no ensino, pesquisa e desenvolvimento tecnológico.</p>
-              </div>
-            </div>
-            <div class="col-md-4 d-flex">
-              <div class="card border-0 shadow-lg p-4 w-100 h-100 d-flex flex-column">
-                <h3 class="text-success">Visão</h3>
-                <p class="flex-grow-1">Ser referência nacional e internacional em soluções tecnológicas e educacionais de alto impacto.</p>
-              </div>
-            </div>
-            <div class="col-md-4 d-flex">
-              <div class="card border-0 shadow-lg p-4 w-100 h-100 d-flex flex-column">
-                <h3 class="text-warning">Valores</h3>
-                <ul class="list-unstyled flex-grow-1">
-                  <li>🔹 Ética e transparência</li>
-                  <li>🔹 Compromisso com a inovação</li>
-                  <li>🔹 Sustentabilidade e responsabilidade social</li>
-                  <li>🔹 Respeito à diversidade</li>
-                </ul>
-              </div>
-            </div>
+    <div class="container mt-5">
+      <div class="row text-center">
+        <div class="col-md-4 d-flex">
+          <div class="card border-0 shadow-lg p-4 w-100 h-100 d-flex flex-column card-hover">
+            <h3 class="text-primary">Missão</h3>
+            <p class="flex-grow-1">Investigar a presença, o comportamento e os impactos dos compostos orgânicos
+              emergentes no meio ambiente, utilizando métodos analíticos de ponta e promovendo a formação de
+              pesquisadores capacitados para enfrentar os desafios da sustentabilidade e da preservação ambiental..</p>
           </div>
         </div>
-        
+        <div class="col-md-4 d-flex">
+          <div class="card border-0 shadow-lg p-4 w-100 h-100 d-flex flex-column card-hover">
+            <h3 class="text-success">Visão</h3>
+            <p class="flex-grow-1">Ser um grupo de referência nacional e internacional na análise de compostos orgânicos
+              emergentes e biomonitoramento, contribuindo para o desenvolvimento de políticas ambientais, inovação
+              tecnológica e formação de profissionais altamente qualificados..</p>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 d-flex">
+          <div class="card border-0 shadow-lg p-4 w-100 h-100 d-flex flex-column card-hover">
+            <h3 class="text-warning">Valores</h3>
+            <ul class="list-unstyled flex-grow-1">
+              <li>✅ Compromisso ambiental </li>
+              <li>✅ Excelência científica </li>
+              <li>✅ Inovação</li>
+              <li>✅ Formação de profissionais </li>
+              <li>✅ Interdisciplinaridade</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
 
-        <div style="height: 80px;"></div>
+
+    <div style="height: 80px;"></div>
 
 
 
     <div class="container marketing">
-        <!-- PARCEIROS -->
-        <div class="row">
-          
-          <div class="col-lg-4">
-            <img src="./assets/companhia.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
-              style="object-fit: cover;">
-            <div class="content">
-              <h2>Empresas</h2>
-              <p>O GEA convida empresas a colaborar em projetos de pesquisa e inovação ambiental. Descubra como podemos
-                trabalhar juntos.</p>
-              <p>
-                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#empresasGEA">
-                  Saiba mais &raquo;
-                </button>
-              </p>
-            </div>
-          </div>
+      <!-- PARCEIROS -->
+      <div class="row">
 
-
-          <div class="col-lg-4">
-            <img src="./assets/instituicao.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
-              style="object-fit: cover;">
-            <div class="content">
-              <h2>Instituições</h2>
-              <p>O GEA convida instituições de ensino público e privadas a colaborar em projetos de sustentabilidade.
-                Juntos, podemos desenvolver soluções ambientais inovadoras e impactantes, promovendo a preservação do
-                meio ambiente e a saúde pública.</p>
-              <p>
-                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#instituicoesGEA">
-                  Saiba mais &raquo;
-                </button>
-              </p>
-            </div>
-          </div>
-
-
-          <div class="col-lg-4">
-            <img src="./assets/internacional.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
-              style="object-fit: cover;">
-            <div class="content">
-              <h2>Parceiros Internacionais</h2>
-              <p>O GEA busca parcerias com instituições internacionais para promover projetos de sustentabilidade.
-                Juntos, podemos compartilhar conhecimentos e desenvolver soluções ambientais inovadoras que beneficiem o
-                mundo todo.</p>
-              <p>
-                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#internacionalGEA">
-                  Saiba mais &raquo;
-                </button>
-              </p>
-            </div>
+        <div class="col-lg-4">
+          <img src="./assets/companhia.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
+            style="object-fit: cover;">
+          <div class="content">
+            <h2>Empresas</h2>
+            <p>O GEA convida empresas a colaborar em projetos de pesquisa e inovação ambiental. Descubra como podemos
+              trabalhar juntos.</p>
+            <p>
+              <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#empresasGEA">
+                Saiba mais &raquo;
+              </button>
+            </p>
           </div>
         </div>
-        <hr class="featurette-divider">
+
+
+        <div class="col-lg-4">
+          <img src="./assets/instituicao.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
+            style="object-fit: cover;">
+          <div class="content">
+            <h2>Instituições</h2>
+            <p>O GEA convida instituições de ensino público e privadas a colaborar em projetos de sustentabilidade.
+              Juntos, podemos desenvolver soluções ambientais inovadoras e impactantes, promovendo a preservação do
+              meio ambiente e a saúde pública.</p>
+            <p>
+              <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#instituicoesGEA">
+                Saiba mais &raquo;
+              </button>
+            </p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4">
+          <img src="./assets/internacional.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
+            style="object-fit: cover;">
+          <div class="content">
+            <h2>Parceiros Internacionais</h2>
+            <p>O GEA busca parcerias com instituições internacionais para promover projetos de sustentabilidade.
+              Juntos, podemos compartilhar conhecimentos e desenvolver soluções ambientais inovadoras que beneficiem o
+              mundo todo.</p>
+            <p>
+              <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#internacionalGEA">
+                Saiba mais &raquo;
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
@@ -534,7 +566,8 @@
     <!-- FOOTER -->
     <footer class="container">
       <p class="float-end"><a href="#">Back to top</a></p>
-      <p>© 2025 Kateriny Bispo. Todos os direitos reservados. · <a href="/privacy">Privacidade</a> · <a href="/terms">Termos</a></p>
+      <p>© 2025 Kateriny Bispo. Todos os direitos reservados. · <a href="/privacy">Privacidade</a> · <a
+          href="/terms">Termos</a></p>
     </footer>
   </main>
 

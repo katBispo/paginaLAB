@@ -8,6 +8,15 @@
   margin: 0 auto;           /* Centraliza a div dentro do overlay */
 }
 
+.modal-dialog {
+  max-width: 80%; /* Aumenta a largura total do modal */
+  width: 80%;
+}
+
+.modal-content {
+  width: 100%; /* Garante que o conteúdo do modal ocupe toda a largura do modal */
+  padding: 20px; /* Opcional: adiciona espaçamento interno para melhor estética */
+}
 
 .grupo-pesquisa h5 {
   font-weight: bold;

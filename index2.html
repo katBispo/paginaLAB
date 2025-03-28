@@ -19,116 +19,9 @@
 
   <!-- Bootstrap core CSS -->
   <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 
-  <style>
- .card-pesquisas {
-        width: 100%;
-        max-width: 400px;
-        background: linear-gradient(135deg, #2e7d32, #66bb6a);
-        color: white;
-        padding: 20px;
-        border-radius: 12px;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        cursor: pointer;
-    }
-
-    .card-pesquisas:hover {
-        transform: scale(1.05);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    }
-
-    .card-content h3 {
-        margin-bottom: 15px;
-        font-size: 18px;
-    }
-
-    .btn-lg {
-        background-color: white;
-        color: #2e7d32;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 8px;
-        font-size: 16px;
-        font-weight: bold;
-        transition: background 0.3s ease, color 0.3s ease;
-    }
-
-    .btn-lg:hover {
-        background-color: #388e3c;
-        color: white;
-    }
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    .row {
-      display: flex;
-      align-items: stretch;
-    }
-
-    .col-lg-4 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .content {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .bd-placeholder-img {
-      margin-bottom: 15px;
-    }
-
-    .card-hover {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card-hover:hover {
-      transform: scale(1.05);
-      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .card h3 {
-      text-align: center;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-
-    .card ul {
-      padding-left: 0;
-      text-align: center;
-      font-size: 18px;
-      font-weight: 500;
-    }
-
-    .card ul li {
-      list-style: none;
-      padding: 8px 0;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .card ul li:last-child {
-      border-bottom: none;
-    }
-  </style>
-
+ 
 
   <!-- Custom styles for this template -->
   <link href="carousel.css" rel="stylesheet">
@@ -366,7 +259,7 @@
           </div>
         </div>
       </div>
-      <div style="height: 80px;"></div>
+      <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
@@ -389,28 +282,54 @@
 
         </div>
       </div>
-      <div style="height: 80px;"></div>
+      <hr class="featurette-divider">
 
       <div class="container px-1 py-1" id="icon-grid">
-        <div id="overlay-pesquisas-container" class="card-pesquisas">
+        <div class="container-cards">
+          <div class="card-pesquisas">
+              <div class="card-content">
+                  <h3>Pesquisas desenvolvidas ao longo de 20 anos</h3>
+                  <a class="btn btn-lg btn-primary" id="btnPesquisas" href="#" data-bs-toggle="modal"
+                      data-bs-target="#overlayPesquisas">Saiba Mais</a>
+              </div>
+          </div>
+      
+          <div class="card-pesquisas">
+              <div class="card-content">
+                  <h3>Técnicas Executadas</h3>
+                  <a class="btn btn-lg btn-primary" id="btnPesquisas" href="#" data-bs-toggle="modal"
+                      data-bs-target="#overlayPesquisas">Saiba Mais</a>
+              </div>
+          </div>
+
+
+
+          <div class="card-pesquisas">
+            <div class="card-content">
+                <h3>Linhas de Pesquisa</h3>
+                <a class="btn btn-lg btn-primary" id="btnPesquisas" href="#" data-bs-toggle="modal"
+                    data-bs-target="#overlayPesquisas">Saiba Mais</a>
+            </div>
+        </div>
+
+        <div class="card-pesquisas">
           <div class="card-content">
-              <h3>Pesquisas desenvolvidas ao longo de 20 anos</h3>
-              <a class="btn btn-lg btn-primary" id="btnPesquisas" href="#" data-bs-toggle="modal"
-                  data-bs-target="#overlayPesquisas">Saiba Mais</a>
+              <h3>Histórico</h3>
+              <a class="btn btn-lg btn-primary" id="btnHistorico" href="#" data-bs-toggle="modal"
+                  data-bs-target="#overlayHistorico">Saiba Mais</a>
           </div>
       </div>
-      </div>
 
 
+      <div class="card-pesquisas">
+        <div class="card-content">
+            <h3>Equipamentos</h3>
+            <a class="btn btn-lg btn-primary" id="btnEquipamentos" href="#" data-bs-toggle="modal"
+                data-bs-target="#overlayEquipamentos">Saiba Mais</a>
+        </div>
+    </div>
 
-      <div class="container px-1 py-1" id="icon-grid">
-        <div id="overlay-pesquisas-container" class="card-pesquisas">
-          <div class="card-content">
-              <h3>Técnicas Executadas</h3>
-              <a class="btn btn-lg btn-primary" id="btnPesquisas" href="#" data-bs-toggle="modal"
-                  data-bs-target="#overlayPesquisas">Saiba Mais</a>
-          </div>
-      </div>
+
       </div>
 
 
@@ -474,6 +393,7 @@
     });
 </script>
 
+<hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7 order-md-2">

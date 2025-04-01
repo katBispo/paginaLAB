@@ -1,14 +1,11 @@
 .container-cards {
   display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 20px;
+  justify-content: space-between; /* Distribui os cards com espaços entre eles */
+  flex-wrap: wrap; /* Permite que eles se ajustem em diferentes linhas se necessário */
+  gap: 20px; /* Espaço entre os cards */
 }
 
 .card-pesquisas {
-  width: 100%;
-  max-width: 400px;
   background: linear-gradient(135deg, #2e7d32, #66bb6a);
   color: white;
   padding: 20px;
@@ -17,6 +14,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  margin-bottom: 20px; /* Espaço entre os cards */
 }
 
 .card-pesquisas:hover {
@@ -24,13 +22,13 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.card-content h3 {
-  margin-bottom: 15px;
+.card-pesquisas h1 {
   font-size: 20px;
+  margin-bottom: 15px;
 }
 
-.card-content p {
-  font-size: 16px;
+.card-pesquisas p {
+  font-size: 14px;
   margin-bottom: 15px;
 }
 
@@ -40,7 +38,7 @@
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   transition: background 0.3s ease, color 0.3s ease;
   text-decoration: none;
@@ -50,73 +48,6 @@
   background-color: #388e3c;
   color: white;
 }
-
-
-
-
-
-
-
-
-.container-cards2 {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-.card-pesquisas2 {
-  width: 100%;
-  max-width: 400px;
-  background: linear-gradient(135deg, #2e7d32, #66bb6a);
-  color: white;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.card-pesquisas2:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.card-content h3 {
-  margin-bottom: 15px;
-  font-size: 20px;
-}
-
-.card-content p {
-  font-size: 16px;
-  margin-bottom: 15px;
-}
-
-.btn-lg {
-  background-color: white;
-  color: #2e7d32;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  transition: background 0.3s ease, color 0.3s ease;
-  text-decoration: none;
-}
-
-.btn-lg:hover {
-  background-color: #388e3c;
-  color: white;
-}
-
-
-
-
-
-
-
 
 
 

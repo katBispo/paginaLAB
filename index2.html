@@ -285,24 +285,139 @@
 
       <hr class="featurette-divider">
 
-     
+
+
+
+      <div class="container px-1 py-1" id="icon-grid">
+        <div class="row">
+          <!-- Card Pesquisas Desenvolvidas -->
+          <div class="col-md-4 mb-4">
+            <div class="card-pesquisas">
+              <h1 style="color: white;">Pesquisas Desenvolvidas</h1>
+              <p style="color: white;">Conheça as pesquisas realizadas ao longo de 20 anos.</p>
+              <p>
+                <a class="btn btn-lg btn-primary btnPesquisa" href="#" data-bs-toggle="modal"
+                  data-bs-target="#pesquisaModal">
+                  Saiba Mais
+                </a>
+              </p>
+            </div>
+            <div id="overlay-pesquisa-container"></div> <!-- Apenas um container -->
+          </div>
+
+          <!-- Card Histórico -->
+          <div class="col-md-4 mb-4">
+            <div class="card-pesquisas">
+              <h1 style="color: white;">Histórico</h1>
+              <p style="color: white;">Conheça a trajetória do grupo de pesquisa.</p>
+              <p>
+                <a class="btn btn-lg btn-primary btnHistorico" href="#" data-bs-toggle="modal"
+                  data-bs-target="#historicoModal">
+                  Saiba Mais
+                </a>
+              </p>
+            </div>
+            <div id="overlay-historico-container"></div> <!-- Apenas um container -->
+          </div>
+
+          <!-- Card Equipamentos -->
+          <div class="col-md-4 mb-4">
+            <div class="card-pesquisas">
+              <h1 style="color: white;">Equipamentos</h1>
+              <p style="color: white;">Veja os equipamentos disponíveis no laboratório</p>
+              <p>
+                <a class="btn btn-lg btn-primary btnEquipamentos" href="#" data-bs-toggle="modal"
+                  data-bs-target="#equipamentosModal">
+                  Saiba Mais
+                </a>
+              </p>
+            </div>
+            <div id="overlay-equipamentos-container"></div> <!-- Apenas um container -->
+          </div>
+
+          <!-- Card Técnicas Executadas -->
+          <div class="col-md-4 mb-4">
+            <div class="card-pesquisas">
+              <h1 style="color: white;">Técnicas Executadas</h1>
+              <p style="color: white;">Veja as principais técnicas aplicadas nas pesquisas.</p>
+              <p>
+                <a class="btn btn-lg btn-primary btnTecnicas" href="#" data-bs-toggle="modal"
+                  data-bs-target="#tecnicaModal">
+                  Saiba
+                </a>
+              </p>
+            </div>
+            <div id="overlay-tecnicas-container"></div> <!-- Apenas um container -->
+          </div>
+
+          <!-- Card Linhas de Pesquisa -->
+          <div class="col-md-4 mb-4">
+            <div class="card-pesquisas">
+              <h1 style="color: white;">Linhas de Pesquisa</h1>
+              <p style="color: white;">Áreas de estudo que desenvolvemos.</p>
+              <p>
+                <a class="btn btn-lg btn-primary btnLinhasPesquisas" href="#" data-bs-toggle="modal"
+                  data-bs-target="#linhasPesquisaModal">
+                  Saiba
+                </a>
+              </p>
+            </div>
+            <div id="overlay-linhasPesquisa-container"></div> <!-- Apenas um container -->
+          </div>
+        </div>
+      </div>
+
+
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Pesquisa e Inovação <span class="text-muted">a Serviço da Ciência e
+              Tecnologia.</span></h2>
+          <p class="lead">Somos um grupo de pesquisa formado por profissionais em formação altamente capacitados,
+            com
+            experiência prática em laboratórios analíticos, atuação em campo e desenvolvimento de soluções
+            personalizadas. Unimos dedicação acadêmica, rigor científico e inovação para atender às demandas das
+            empresas, oferecendo resultados confiáveis e alinhados às suas necessidades.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/myrnaLAB.jpeg" class="d-block w-100" alt="Foto 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/eltonRIO.jpeg" class="d-block w-100" alt="Foto 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/ricardoPC.jpeg" class="d-block w-100" alt="Foto 3">
+              </div>
+
+              <div class="carousel-item">
+                <img src="./assets/gabiMAQUINA.jpeg" class="d-block w-100" alt="Foto 3">
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+
 
     </div>
 
-    
 
-    <div class="container px-1 py-1" id="icon-grid">
-      <div class="card-pesquisas">
-          <h1 style="color: white;">Pesquisas Desenvolvidas</h1>
-          <p style="color: white;">Conheça as pesquisas realizadas ao longo de 20 anos.</p>
-          <p>
-              <a class="btn btn-lg btn-primary btnPesquisa" href="#" data-bs-toggle="modal" data-bs-target="#pesquisaModal">
-                  Saiba
-              </a>
-          </p>
-      </div>
-      <div id="overlay-pesquisa-container"></div> <!-- Apenas um container -->
-  </div>
 
     <div id="overlay-container"></div>
 
@@ -323,7 +438,7 @@
         });
     </script>
 
-<!-- Modal para Pesquisas 
+    <!-- Modal para Pesquisas 
     <script>
       fetch('./overlay/overlayPesquisas.html')
         .then(response => response.text())
@@ -351,44 +466,164 @@
 
 
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-      fetch('./overlay/overlayPesquisas.html')
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch('./overlay/overlayPesquisas.html')
           .then(response => response.text())
           .then(data => {
-              let container = document.getElementById('overlay-pesquisa-container');
-              if (!container) {
-                  console.error("Erro: container do modal não encontrado!");
-                  return;
-              }
-              
-              container.innerHTML = data;
-  
-              var modalElement = document.getElementById('pesquisaModal');
-              if (modalElement) {
-                  var pesquisaModal = new bootstrap.Modal(modalElement);
-  
-                  // Adicionar evento ao botão corretamente
-                  document.querySelector('.btnPesquisa').addEventListener('click', function (event) {
-                      event.preventDefault();
-                      pesquisaModal.show();
-                  });
-              } else {
-                  console.error("Erro: Modal não foi carregado corretamente.");
-              }
+            let container = document.getElementById('overlay-pesquisa-container');
+            if (!container) {
+              console.error("Erro: container do modal não encontrado!");
+              return;
+            }
+
+            container.innerHTML = data;
+
+            var modalElement = document.getElementById('pesquisaModal');
+            if (modalElement) {
+              var pesquisaModal = new bootstrap.Modal(modalElement);
+
+              // Adicionar evento ao botão corretamente
+              document.querySelector('.btnPesquisa').addEventListener('click', function (event) {
+                event.preventDefault();
+                pesquisaModal.show();
+              });
+            } else {
+              console.error("Erro: Modal não foi carregado corretamente.");
+            }
           })
           .catch(error => console.error("Erro ao carregar o modal:", error));
-  });
-  </script>
+      });
+    </script>
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch('./overlay/overlayTecnicas.html')
+          .then(response => response.text())
+          .then(data => {
+            let container = document.getElementById('overlay-tecnicas-container');
+            if (!container) {
+              console.error("Erro: container do modal não encontrado!");
+              return;
+            }
+
+            container.innerHTML = data;
+
+            var modalElement = document.getElementById('tecnicaModal');
+            if (modalElement) {
+              var pesquisaModal = new bootstrap.Modal(modalElement);
+
+              // Adicionar evento ao botão corretamente
+              document.querySelector('.btnTecnicas').addEventListener('click', function (event) {
+                event.preventDefault();
+                pesquisaModal.show();
+              });
+            } else {
+              console.error("Erro: Modal não foi carregado corretamente.");
+            }
+          })
+          .catch(error => console.error("Erro ao carregar o modal:", error));
+      });
+    </script>
+
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch('./overlay/overlayHistorico.html')
+          .then(response => response.text())
+          .then(data => {
+            let container = document.getElementById('overlay-historico-container');
+            if (!container) {
+              console.error("Erro: container do modal não encontrado!");
+              return;
+            }
+
+            container.innerHTML = data;
+
+            var modalElement = document.getElementById('historicoModal');
+            if (modalElement) {
+              var pesquisaModal = new bootstrap.Modal(modalElement);
+
+              // Adicionar evento ao botão corretamente
+              document.querySelector('.btnHistorico').addEventListener('click', function (event) {
+                event.preventDefault();
+                pesquisaModal.show();
+              });
+            } else {
+              console.error("Erro: Modal não foi carregado corretamente.");
+            }
+          })
+          .catch(error => console.error("Erro ao carregar o modal:", error));
+      });
+    </script>
 
 
 
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch('./overlay/overlayLinhasPesquisa.html')
+          .then(response => response.text())
+          .then(data => {
+            let container = document.getElementById('overlay-linhasPesquisa-container');
+            if (!container) {
+              console.error("Erro: container do modal não encontrado!");
+              return;
+            }
+
+            container.innerHTML = data;
+
+            var modalElement = document.getElementById('linhasPesquisaModal');
+            if (modalElement) {
+              var pesquisaModal = new bootstrap.Modal(modalElement);
+
+              // Adicionar evento ao botão corretamente
+              document.querySelector('.btnLinhasPesquisas').addEventListener('click', function (event) {
+                event.preventDefault();
+                pesquisaModal.show();
+              });
+            } else {
+              console.error("Erro: Modal não foi carregado corretamente.");
+            }
+          })
+          .catch(error => console.error("Erro ao carregar o modal:", error));
+      });
+    </script>
 
 
 
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch('./overlay/overlayEquipamentos.html')
+          .then(response => response.text())
+          .then(data => {
+            let container = document.getElementById('overlay-equipamentos-container');
+            if (!container) {
+              console.error("Erro: container do modal não encontrado!");
+              return;
+            }
 
+            container.innerHTML = data;
+
+            var modalElement = document.getElementById('equipamentosModal');
+            if (modalElement) {
+              var pesquisaModal = new bootstrap.Modal(modalElement);
+
+              // Adicionar evento ao botão corretamente
+              document.querySelector('.btnEquipamentos').addEventListener('click', function (event) {
+                event.preventDefault();
+                pesquisaModal.show();
+              });
+            } else {
+              console.error("Erro: Modal não foi carregado corretamente.");
+            }
+          })
+          .catch(error => console.error("Erro ao carregar o modal:", error));
+      });
+    </script>
 
 
 
@@ -445,70 +680,10 @@
     </script>
 
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Pesquisa e Inovação <span class="text-muted">a Serviço da Ciência e
-            Tecnologia.</span></h2>
-        <p class="lead">Somos um grupo de pesquisa formado por profissionais em formação altamente capacitados,
-          com
-          experiência prática em laboratórios analíticos, atuação em campo e desenvolvimento de soluções
-          personalizadas. Unimos dedicação acadêmica, rigor científico e inovação para atender às demandas das
-          empresas, oferecendo resultados confiáveis e alinhados às suas necessidades.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/myrnaLAB.jpeg" class="d-block w-100" alt="Foto 1">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/eltonRIO.jpeg" class="d-block w-100" alt="Foto 2">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/ricardoPC.jpeg" class="d-block w-100" alt="Foto 3">
-            </div>
-
-            <div class="carousel-item">
-              <img src="./assets/gabiMAQUINA.jpeg" class="d-block w-100" alt="Foto 3">
-            </div>
-
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-          </button>
-        </div>
-      </div>
-    </div>
 
 
-    <hr class="featurette-divider">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-          intended to be actually read, simply here to give you a better view of what this would look like with
-          some
-          actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-          height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-        </svg>
-
-      </div>
-    </div>
-
+   
     <hr class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
@@ -529,4 +704,4 @@
 
 </body>
 
-</html> 
+</html>

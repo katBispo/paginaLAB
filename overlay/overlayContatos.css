@@ -1,0 +1,36 @@
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+.modal-body .mb-3 {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.modal-body a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.modal-body a:hover {
+    text-decoration: underline;
+}
+
+.modal-body i {
+    margin-right: 5px;
+    color: #007bff;
+}
+
+.modal-footer .btn {
+    border-radius: 8px;
+}

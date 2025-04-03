@@ -1,100 +1,101 @@
-<!-- Modal "Conheça Nossa Equipe" -->
+<!-- overlayEquipe.html -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<style>
+  .membro-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+  }
+
+  .membro-photo {
+    width: 120px;
+    height: 120px;
+    background-color: #dcdcdc;
+    border: 2px solid #198754;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .membro-info {
+    flex-grow: 1;
+  }
+
+  .membro-info h5 {
+    font-weight: bold;
+    color: #198754;
+  }
+
+  .modal-header {
+    background-color: #198754;
+    color: white;
+  }
+
+  .section-title {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #198754;
+    border-bottom: 2px solid #198754;
+    padding-bottom: 5px;
+  }
+</style>
 
 <div class="modal fade" id="overlayEquipe" tabindex="-1" aria-labelledby="overlayEquipeLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="overlayEquipeLabel">Conheça Nossa Equipe</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="equipe-container">
-                    <div class="equipe-item destaque">
-                        <div class="foto-circulo grandeNatilene">
-                            <img src="./assets/natilenePipetando.jpeg" alt="Foto de Natilene">
-                        </div>
-                        <div class="nome-função">
-                            <p class="nome"><span class="primeiro-nome">Natilene</span> <span class="sobrenome">Mesquita</span></p>
-                        </div>
-                        <a href="#" class="btn btn-success no-link-style" id="btnMeConheca" data-bs-toggle="modal" data-bs-target="#overlay11">Me Conheça</a>
-                    </div>
-                </div>
-                <div style="height: 30px;"></div>
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="overlayEquipeLabel">Nossa Equipe</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
 
-                <div class="grupo-pesquisa">
-                    <h5>Grupo de Pesquisa</h5>
-                    <p>Temos membros de diversas áreas, incluindo:</p>
-                    <div class="fotos-grupo">
-                        <div class="foto-item">
-                            <div class="foto-quadrada">
-                                <img src="./assets/fotoGRUPO.jpeg" alt="Alunos de Graduação">
-                            </div>
-                            <p class="foto-legenda">Alunos de Graduação</p>
-                        </div>
-
-                        <div class="foto-item">
-                            <div class="foto-quadrada">
-                                <img src="./assets/gabiCONGRESSO.jpeg" alt="Mestrandos">
-                            </div>
-                            <p class="foto-legenda">Mestrandos</p>
-                        </div>
-
-                        <div class="foto-item">
-                            <div class="foto-quadrada">
-                                <img src="./assets/equip_GEA.jpeg" alt="Doutorandos">
-                            </div>
-                            <p class="foto-legenda">Doutorandos</p>
-                        </div>
-
-                        <div class="foto-item">
-                            <div class="foto-quadrada">
-                                <img src="./assets/myrnaLAB.jpeg" alt="Técnicos">
-                            </div>
-                            <p class="foto-legenda">Técnicos</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <!-- Alunos de Graduação -->
+        <h5 class="section-title">Alunos de Graduação</h5>
+        <div class="membro-card">
+          <div class="membro-photo" style="background-image: url('./assets/gabiCONGRESSO.jpeg');"></div>
+          <div class="membro-info">
+            <p>Os alunos de graduação participam ativamente dos projetos do laboratório, auxiliando nas pesquisas e experimentos.</p>
+          </div>
         </div>
-    </div>
-</div>
-<!-- Modal "Me Conheça" -->
-<div class="modal fade" id="overlay11" tabindex="-1" aria-labelledby="overlay11Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="overlay11Label">Conheça mais sobre Natilene Mesquita</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body d-flex">
-                <div class="modal-text" style="flex: 1; padding-right: 20px;">
-                    <p>Pós-Doutorado em Análise de Poluentes Orgânicos Emergentes em Amostras Biológicas pelo Instituto Politécnico do Porto (2022). Doutora em Química (Química Analítica) pela Universidade de São Paulo (2005), Mestre em Química pela Universidade Estadual Paulista Júlio de Mesquita Filho (2001) e graduada em Química Industrial pela Universidade Federal do Maranhão (1998).Atuou como Pró-Reitora de Pesquisa, Pós-Graduação e Inovação (PRPGI) do Instituto Federal do Maranhão (IFMA) entre 2012 e 2020 e como Diretora de Pesquisa, Pós-Graduação e Inovação de 2008 a 2012. Atualmente, é Professora Titular do IFMA, onde integra o corpo docente permanente do Programa de Pós-Graduação em Química Mestrado e do Doutorado em Química em Associação IFMA/UFMA, bem como do Mestrado Profissional em Rede Nacional em Gestão e Regulação de Recursos Hídricos, polo UEMA.Possui ampla experiência em Química Analítica, com ênfase em análise de traços e química ambiental. Suas principais áreas de atuação incluem: qualidade da água, monitoramento e análise de pesticidas, poluentes orgânicos emergentes, cromatografia, validação de métodos analíticos, análise toxicológica de alimentos e educação ambiental. Seu índice H é 14, evidenciando a relevância e o impacto de sua produção científica no meio acadêmico. (Texto informado pelo autor)</p>
-                </div>
-                <div class="modal-image" style="width: 150px;">
-                    <img src="./assets/natilenePipetando.jpeg" alt="Foto de Natilene" class="img-fluid" style="width: 100%; height: auto; object-fit: cover;">
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
+
+        <!-- Mestrandos -->
+        <h5 class="section-title">Mestrandos</h5>
+        <div class="membro-card">
+          <div class="membro-photo" style="background-image: url('./assets/ricardoPC.jpeg');"></div>
+          <div class="membro-info">
+            <p>Os mestrandos desenvolvem pesquisas mais aprofundadas, contribuindo para a inovação e avanços científicos no laboratório.</p>
+          </div>
         </div>
+
+        <!-- Doutorandos -->
+        <h5 class="section-title">Doutorandos</h5>
+        <div class="membro-card">
+          <div class="membro-photo" style="background-image: url('./assets/myrnaLAB.jpeg');"></div>
+          <div class="membro-info">
+            <p>Os doutorandos lideram projetos de pesquisa e auxiliam na orientação de alunos de graduação e mestrado.</p>
+          </div>
+        </div>
+
+        <!-- Técnicos -->
+        <h5 class="section-title">Técnicos</h5>
+        <div class="membro-card">
+          <div class="membro-photo" style="background-image: url('./assets/gabiMAQUINA.jpeg');"></div>
+          <div class="membro-info">
+            <p>Os técnicos são responsáveis pelo suporte técnico, manutenção dos equipamentos e apoio às atividades laboratoriais.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
     </div>
+  </div>
 </div>
-
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const btnMeConheca = document.getElementById('btnMeConheca');
-        
-        btnMeConheca.addEventListener('click', function() {
-            var modalEquipe = new bootstrap.Modal(document.getElementById('overlayEquipe'));
-            modalEquipe.hide();  
-            setTimeout(function() {
-                var modalMeConheca = new bootstrap.Modal(document.getElementById('overlay11'));
-                modalMeConheca.show();  
-            }, 300); 
-        });
-    });
-</script>

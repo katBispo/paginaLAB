@@ -47,12 +47,10 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
+           
             <li class="nav-item">
-              <a class="nav-link" href="#">Reserva Equipamentos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">aaaa</a>
-            </li>
+              <a class="nav-link btnContatos" href="#">Contatos</a>
+          </li>
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -62,6 +60,9 @@
       </div>
     </nav>
   </header>
+
+  <div id="overlay-contatos-container"></div>
+
 
   <main>
 
@@ -99,7 +100,7 @@
 
         <div class="carousel-item">
           <div style="position: relative; width: 100%; height: 100%;">
-            <img src="./assets/chokito vacilao.png" alt="Descrição da Imagem"
+            <img src="./assets/bannerTeste.jpeg" alt="Descrição da Imagem"
               style="width: 100%; height: 100%; object-fit: cover;">
             <div
               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
@@ -205,60 +206,43 @@
     <div style="height: 80px;"></div>
 
 
-
     <div class="container marketing">
       <!-- PARCEIROS -->
       <div class="row">
-
-        <div class="col-lg-4">
+        <div class="col-lg-4 d-flex flex-column align-items-center text-center">
           <img src="./assets/companhia.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
             style="object-fit: cover;">
-          <div class="content">
+          <div class="content flex-grow-1 d-flex flex-column">
             <h2>Empresas</h2>
-            <p>O GEA convida empresas a colaborar em projetos de pesquisa e inovação ambiental. Descubra como podemos
-              trabalhar juntos.</p>
-            <p>
-              <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#empresasGEA">
-                Saiba mais &raquo;
-              </button>
-            </p>
+            <p>O GEA convida empresas a colaborar em projetos de pesquisa e inovação ambiental.
+              Juntos, podemos desenvolver soluções tecnológicas e sustentáveis para desafios ambientais,
+              promovendo inovação e responsabilidade ecológica no setor industrial.</p>
           </div>
         </div>
-
-
-        <div class="col-lg-4">
+    
+        <div class="col-lg-4 d-flex flex-column align-items-center text-center">
           <img src="./assets/instituicao.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
             style="object-fit: cover;">
-          <div class="content">
+          <div class="content flex-grow-1 d-flex flex-column">
             <h2>Instituições</h2>
             <p>O GEA convida instituições de ensino público e privadas a colaborar em projetos de sustentabilidade.
               Juntos, podemos desenvolver soluções ambientais inovadoras e impactantes, promovendo a preservação do
               meio ambiente e a saúde pública.</p>
-            <p>
-              <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#instituicoesGEA">
-                Saiba mais &raquo;
-              </button>
-            </p>
           </div>
         </div>
-
-
-        <div class="col-lg-4">
+    
+        <div class="col-lg-4 d-flex flex-column align-items-center text-center">
           <img src="./assets/internacional.png" class="bd-placeholder-img rounded-circle" width="140" height="140"
             style="object-fit: cover;">
-          <div class="content">
+          <div class="content flex-grow-1 d-flex flex-column">
             <h2>Parceiros Internacionais</h2>
             <p>O GEA busca parcerias com instituições internacionais para promover projetos de sustentabilidade.
               Juntos, podemos compartilhar conhecimentos e desenvolver soluções ambientais inovadoras que beneficiem o
               mundo todo.</p>
-            <p>
-              <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#internacionalGEA">
-                Saiba mais &raquo;
-              </button>
-            </p>
           </div>
         </div>
       </div>
+
       <hr class="featurette-divider">
 
       <div class="row featurette">
@@ -274,6 +258,7 @@
             mistérios ambientais ainda pouco compreendidos, promovendo a ciência como um aliado fundamental para a
             conservação ambiental.</p>
         </div>
+        
         <div class="col-md-5">
           <img src="./assets/natilene.jpeg"
             class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
@@ -281,6 +266,13 @@
 
 
         </div>
+        <p>
+          <a class="btn btn-success mt-3" data-bs-toggle="modal" data-bs-target="#overlayNatilene">
+            Trajetória Acadêmica
+          </a>
+        </p>
+        <div id="overlay-natilene-container"></div>
+        
       </div>
 
       <hr class="featurette-divider">
@@ -343,7 +335,7 @@
               <p>
                 <a class="btn btn-lg btn-primary btnTecnicas" href="#" data-bs-toggle="modal"
                   data-bs-target="#tecnicaModal">
-                  Saiba
+                  Saiba Mais
                 </a>
               </p>
             </div>
@@ -358,7 +350,7 @@
               <p>
                 <a class="btn btn-lg btn-primary btnLinhasPesquisas" href="#" data-bs-toggle="modal"
                   data-bs-target="#linhasPesquisaModal">
-                  Saiba
+                  Saiba Mais
                 </a>
               </p>
             </div>
@@ -419,11 +411,36 @@
 
 
 
+
+
+      
+    </div>
+
+     
+      
+
     <div id="overlay-container"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script>
+      fetch('./overlay/overlayNatilene.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('overlay-natilene-container').innerHTML = data;
+    
+          var modals = document.querySelectorAll('.modal');
+          modals.forEach(function (modalElement) {
+            new bootstrap.Modal(modalElement);
+          });
+        });
+    </script>
+    
+
 
     <script>
       fetch('./overlay/overlayCorpoDocente.html')
@@ -455,7 +472,34 @@
 
 
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch('./overlay/overlayContatos.html')
+            .then(response => response.text())
+            .then(data => {
+                let container = document.getElementById('overlay-contatos-container');
+                if (!container) {
+                    console.error("Erro: container do modal não encontrado!");
+                    return;
+                }
 
+                container.innerHTML = data;
+
+                var modalElement = document.getElementById('contatosModal');
+                if (modalElement) {
+                    var contatosModal = new bootstrap.Modal(modalElement);
+
+                    document.querySelector('.btnContatos').addEventListener('click', function (event) {
+                        event.preventDefault();
+                        contatosModal.show();
+                    });
+                } else {
+                    console.error("Erro: Modal de contatos não foi carregado corretamente.");
+                }
+            })
+            .catch(error => console.error("Erro ao carregar o modal de contatos:", error));
+    });
+</script>
 
 
 
